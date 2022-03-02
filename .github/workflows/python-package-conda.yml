@@ -26,5 +26,6 @@ jobs:
       run: |
         pip install tox 
         pip install webdriver-manager
+        export PATH=$PATH:/home/embo/.wdm/drivers/geckodriver/linux64/v0.30.0
         tox -e py38-notebook
     
