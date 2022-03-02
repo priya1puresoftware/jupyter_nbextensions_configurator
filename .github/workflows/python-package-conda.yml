@@ -24,6 +24,6 @@ jobs:
         conda install -c conda-forge jupyter_nbextensions_configurator
     - name: Test with pytest
       run: |
-        conda install pytest
-        pip install nose selenium requests
-        pytest
+        pip install tox 
+        tox -e py38
+    
