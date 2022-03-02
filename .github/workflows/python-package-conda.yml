@@ -25,5 +25,5 @@ jobs:
     - name: Test with pytest
       run: |
         pip install tox 
-        tox -e py38
+        tox -e py38-notebook
     
